@@ -2,9 +2,8 @@ package base;
 
 public class BankAccount {
     private String account;
-    public BankAccount(String account){
-        this.account = account;
-    }
+    private String authToken;
+    public BankAccount(){}
 
     public String getAccount() {
         return account;
@@ -13,4 +12,8 @@ public class BankAccount {
     public void setAccount(String account) {
         this.account = account;
     }
+
+    public String getAuthToken() {return authToken;}
+
+    public void setAuthToken(String authToken) {this.authToken = authToken;}
 }
